@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        div {
+            /* color: red; 
+             background-color: aqua; */
+        }
+
+        .red {
+            color: red;
+            background-color: aqua;
+        }
+
+        #blue {
+            color: blue;
+            background-color: black;
+        }
+
+    /* Child Selector */
+        div > span > h5 {
+            color: brown;
+            background-color: bisque;
+        }
+
+        span > p{
+            color: red;
+        }
+
+
+    /* Descendant Selector */
+         article div{
+            color: rgb(137, 220, 20);
+            background-color: rgb(150, 91, 91);
+        }
+
+    /* Universal Selector */
+         *{
+            margin: 0;
+            padding: 0;
+         }
+
+    /* Pseudo Selector */
+    a:link{
+        color: red;
+    }
+    a:visited{
+        color: yellow;
+    }
+    a:active{
+        background-color: red;
+    }
+    a:hover{
+        background-color: green;
+    }
+
+    blockquote:first-child{
+        background-color: khaki;
+    }
+        
+
+        
+
+       
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Element Selector  -->
+    <div class="red">I am DIV 1</div>
+    <div id="blue">I am DIV 2</div>
+
+    <!-- Child Selector -->
+    <div>hh
+        <p>
+            I am paragraph in DIV
+        </p>
+        <span>
+            <h5>
+                I am h5 in DIV's SPAN
+            </h5>
+            <p>
+                I am paragraph in DIV's SPAN
+            </p>
+        </span>
+    </div>
+
+    <span>
+        <p>
+            I am paragraph in SPAN
+        </p>
+    </span>
+
+
+    <!-- Descendant Selector  -->
+    <article>
+        <span>
+            <div>
+                I am div Inside ARTICLE
+            </div>
+        </span>
+    </article>
+
+    <a href="https://www.google.com">go to google</a>
+
+
+    <main>
+        <blockquote>I am First Child</blockquote>
+    </main>
+
+
+</body>
+
+</html>
