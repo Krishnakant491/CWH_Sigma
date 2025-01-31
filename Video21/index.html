@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity and Cascade</title>
+    <style>
+        /*The specificity of this selectoris 1*/
+        /*h2{
+            color: aqua !important;
+        } */
+         
+        /*The specificity of this selectoris 10*/
+        .yellow{
+            color: yellow;
+        }
+
+        /*The specificity of this selectoris 10*/
+        .cred{
+            color: red ;
+            
+        }
+        /*The specificity of this selectoris 10*/
+        .cpurple{
+            color: purple;
+            
+        }
+
+        /*The specificity of this selectoris 10*/
+        h2{
+            color: aqua;
+        }
+
+        /*The specificity of this selectoris 1*/
+        [data-x=a]{
+            color: maroon;
+        }
+
+        /*The specificity of this selectoris 1+10*/
+        h2.yellow{
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h2 class="yellow cred cpurple">CSS Specificity </h2>
+    </div>
+    <p>
+        !important >Inline > ID > Class or Attribute > Element Selector > Universal Selector2 
+    </p>
+    <!-- specificity of id is 100 -->
+    <!-- specificity of inline is 1000 -->
+    <!-- specificity of !important is 10000 -->
+</body>
+</html>
