@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units - px, rem, em, vh, vw, % and more</title>
+    <style>
+        html{
+            font-size: 12px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            background-color: aqua;
+            /*width: 2048px;*/
+            width: 80vw;
+            height: 10vh;
+            box-sizing: border-box;
+            margin: auto;
+            font-size: 2em;
+        }
+
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 23px auto;
+            width: 80vw;
+            box-sizing: border-box;
+            background-color: aquamarine;
+            font-size: 2em;
+            font-size: 36px;
+            font-size: 2rem;
+            min-height: 50vh;
+            
+        
+
+        }
+
+        .container > p{
+            font-size: 1.5em;
+            font-size: 1.5rem;
+            /*text-overflow: clip;
+            overflow: hidden; */
+            width: 50%;
+            height: 80%;
+        }
+
+        .mycont{
+            border: 2px solid black;
+            background-color: red;
+            color: yellow;
+            font-size: 23px;
+            width: 100vmin;
+            /*width: 100vmax;*/
+            margin: 23px auto;
+            box-sizing: border-box;
+            
+
+        }
+
+        .container > div > div{
+            border: 2px solid red;
+        }
+
+        .percentage{
+            font-size: 30px;
+            border: 2px solid black;
+        }
+
+        .percentagechild1{
+            font-size: 100%;
+        }
+        .percentagechild2{
+            font-size: 90%;
+
+        }
+
+        ol{
+            font-size: 24px;
+            padding: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+
+    <div class="container">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias aperiam corporis laudantium, nisi odio minima commodi tempora dolorem, voluptate suscipit autem mollitia neque rem ipsum numquam esse. Perspiciatis, tempora possimus.
+            lorem1500
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A et molestias quod id? Consequatur voluptate nisi illum iste soluta animi?lorem
+        </p>
+        This is container
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ut earum rerum quos sit sed quis voluptatem reprehenderit quidem exercitationem repellendus fugit asperiores dicta, adipisci dolor aperiam autem! Nesciunt neque ullam unde, ex beatae iusto quo labore molestias incidunt facere ad atque, itaque enim et voluptates veniam quidem mollitia laudantium optio at eligendi consequuntur. Nesciunt possimus ducimus error fugit totam rem consequatur quaerat reiciendis, quod, nostrum maxime dolorum dicta cupiditate ad omnis ut quis, cumque porro consequuntur dolore ratione. Ipsum, sunt repudiandae quod nulla quaerat incidunt, fugit, consectetur debitis alias in voluptatum blanditiis eaque mollitia dolorum sequi laudantium? Ad, consectetur! Accusantium est facilis aliquid sequi nostrum dolorum perspiciatis doloribus consectetur corrupti officiis ratione quia minus vel molestiae expedita optio cum alias, voluptatibus quidem fugit, at necessitatibus hic. Amet, officia. Explicabo officiis a beatae vero blanditiis, minima sed praesentium sequi autem asperiores natus iusto omnis sapiente laboriosam perspiciatis voluptas molestias nihil earum similique. Doloribus iure dolor dicta sed. Delectus dignissimos recusandae porro sit animi placeat numquam cum ratione pariatur doloribus? Quae numquam libero accusantium ullam? In animi rerum natus corporis cum eveniet, aliquid ipsam molestiae temporibus. Excepturi nemo distinctio repellendus vel saepe, odio sunt id sequi enim eaque quas dicta deserunt nobis. Voluptatibus ullam id omnis accusamus, dignissimos delectus illo amet, non molestiae accusantium, magnam iusto laboriosam nihil in dolorem eaque ipsam temporibus! Unde praesentium aspernatur ex. Ratione quas, quam sapiente vel eaque voluptates harum, unde reiciendis vero vitae officia saepe dolorum odit nostrum dolorem ducimus neque a. Officiis magni commodi, explicabo tempore ex doloribus. Debitis facilis quibusdam harum dolorem deserunt rem est ea beatae quas cum perspiciatis neque, saepe vel. Libero iure rerum praesentium eum suscipit? Quam fu
+        <div>
+            <div>
+                This is div inside div
+            </div>
+        </div>
+    </div>
+
+    <div class="mycont">
+        This is BOX
+    </div>
+
+    <div class="percentage">
+        <p class="percentagechild1">
+            This is for percentage 1
+        </p>
+        <p class="percentagechild2">
+            This is for percentage 2
+        </p>
+        <span>
+
+        </span>
+    </div>
+
+
+    <div class="tablecontainer">
+
+        
+        <ol type="1">
+            <li>px :- Pixel (individual) </li>
+            <li>viewport :- relative to screen display </li>
+            <ol>
+                <li>vw :- viewport width</li>
+                <li>vh :- viewport height</li>
+            </ol>
+            <li>em :- relative to font size of parent container (if 2em = 2 *size of root element). if parent height = 10px then child height = 2 * 10 = 20</li>
+            <li>rem :- relative to font size of root element (2rem = 2 * size of root element)</li>
+            <li>vmin :- </li>
+            <ol>
+                <li>In computer vmin = height</li>
+                <li>In phone vmin = width</li>
+            </ol>
+            <li>vmax:-</li>
+            <ol>
+                <li>In computer vmax = width</li>
+                <li>In phone vmax = height</li>
+            </ol>
+            <li>min height :- min height of the container. (if for any containers min-height = 50px and height = 10px... for this case height of container will 50px)</li>
+            <li>max height :- max height of the container. (if for any container max-height = 100px and height = 40px...for this case height of container will 100px)</li>
+            <li>% :- n% of parent element. (if height of a container is 100px, height of child 80%, height of child will be - 80% of 100px = 80px)</li>
+            
+            
+        </ol>
+        
+    </div>
+   
+</body>
+</html>
