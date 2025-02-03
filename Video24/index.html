@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadow and Outlines</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            padding: 34px;
+            /*box-shadow: horizontal-offset vertical-offset blur spread color inset; */
+            box-shadow: 6px 12px 2px 2px #888888;
+            /*text-shadow: horizontal-offset vertical-offset blur color*/
+            text-shadow: 3px 2px 2px red;
+            /*outline: width style color*/
+            outline : 3px solid red;
+        }
+        .box2{
+            border: 3px solid grey;
+            margin: 40px;
+            outline: 4px solid red;
+            outline-offset: 15px;
+            border-radius: 15px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        this is a BOX
+    </div>
+
+    <div class="box2">
+        this is box 2
+    </div>
+    
+</body>
+</html>
