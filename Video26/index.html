@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box{
+            width: 30vh;
+            height: 40vh;
+            border: 2px solid black;
+            overflow: auto;
+            white-space: nowrap;  /*content will be in single line*/
+            text-overflow: ellipsis;
+
+        }
+
+
+        .box2{
+            border: 2px solid red;
+            width: 40vh;
+            height: 20vh;
+            text-overflow: ellipsis;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            /*overflow-y: hidden;*/
+            /*overflow: x-axis y-axis*/
+            overflow: scroll hidden;
+           
+        }
+
+        .lorem{
+            border: 2px solid black;
+            width: 575px;
+            text-overflow: clip;
+            overflow: scroll;
+            word-break: break-all;
+            text-indent: 5px;
+            text-align: center;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa alias dolorum placeat ratione modi deserunt enim. Fuga ea distinctio tenetur voluptatibus aut, sint id. Veniam voluptatibus consequatur officia provident, quisquam consectetur nemo mollitia amet! Atque dolor deleniti dignissimos maxime sed?
+    </div>
+
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fugiat est ut, debitis repellat sed ab magni sunt itaque blanditiis nesciunt, vitae doloribus cum exercitationem, eius voluptatem saepe consequatur hic! Iusto, quasi veritatis veniam fugiat esse unde quam est culpa quo, necessitatibus aliquid amet nihil sed. Magnam repudiandae similique nulla!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed officiis quia facere ducimus nobis esse natus aspernatur asperiores ad quas!
+    </div>
+
+    <div class="lorem">
+        Hi i am lorem class
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor odio iusto explicabo sequi nesciunt aspernatur laborum libero odit placeat fuga!
+    </div>
+
+
+    
+</body>
+</html>
